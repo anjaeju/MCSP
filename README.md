@@ -49,20 +49,13 @@ for each_file in file_list:
 ```
 
 
-
-
 # 실행 방법
-1. 바이러스 파일로부터 opcode를 추출한 뒤 이미지 파일로부터 변환  
-Jupyter Notebook: [1-preprocessing] From extraction to converting  
-Python FIle: Utiliy/Preprocessing.py  
-  
-2. 이미지 파일을 PCA를 통해 데이터 변환  
-Jupyter Notebook: [2-converting] apply pca to img data  
-Python File: utilty/converting.py  
+1. Extracting opcode sequences from .asm file and Converting them into the Image with Simhash
+Jupyter Notebook: [1-prepare data] Part 1
 
-위의 1단계, 2단계를 통해서 데이터를 준비한 후  
-갖가지 Model을 이용해 실험을 진행  
+2. Transforming virus image with PCA method
+Jupyter Notebook: [1-prepare data] Part 2
   
-모델에 따른 필요 데이터 목록  
-1. SHA-768로 생성한 1-gram to 4-gram 이미지 데이터 (PCA 진행 하지 않은 것): Baseline, reluMCSC, tanhMCSC and MCSLT  
-2. SHA-768로 생성한 1-gram to 4-gram 이미지 데이터에 PCA를 적용해 512의 크기로 선형 변환된 이미지: MCSP  
+3. Running experiments with thoes images
+Jupyter Notebook: [2-running config]
+Python File: utilty/converting.py  
