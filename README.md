@@ -51,11 +51,10 @@ for each_file in file_list:
 
 # 실행 방법
 1. Extracting opcode sequences from .asm file and Converting them into the Image with Simhash
-Jupyter Notebook: [1-prepare data] Part 1
+    - Jupyter Notebook: [1-prepare data] Part 1
 
 2. Transforming virus image with PCA method
-Jupyter Notebook: [1-prepare data] Part 2
+    - Jupyter Notebook: [1-prepare data] Part 2
   
 3. Running experiments with thoes images
-Jupyter Notebook: [2-running config]
-Python File: utilty/converting.py  
+    - Jupyter Notebook: [2-running config]
